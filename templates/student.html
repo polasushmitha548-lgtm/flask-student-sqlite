@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information</title>
+</head>
+<body>
+
+    <h1>Student Information</h1>
+
+    {% if student %}
+        <p>Roll Number: {{ student[0] }}</p>
+        <p>Name: {{ student[1] }}</p>
+        <p>Department: {{ student[2] }}</p>
+        <p>Year: {{ student[3] }}</p>
+    {% else %}
+        <p>Student not found.</p>
+    {% endif %}
+
+</body>
+</html>
